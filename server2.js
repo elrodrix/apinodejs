@@ -8,12 +8,10 @@ var connection = mysql.createConnection({
 });
 
 
-var port = 8088;
+var port = 8081;
 var server = restify.createServer({
-	name: "ServidorContacto"
+  name: "ServidorContacto2"
 });
-
-
 
 server.use(restify.queryParser());
 server.use(restify.bodyParser());
